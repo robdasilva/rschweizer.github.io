@@ -26,6 +26,7 @@
     aside.querySelector('a#github').href = window.atob('aHR0cHM6Ly9naXRodWIuY29tL3JzY2h3ZWl6ZXI=');
     aside.querySelector('a#linkedin').href = window.atob('aHR0cHM6Ly9saW5rZWRpbi5jb20vaW4vcnNjaHdlaXplcg==');
     aside.querySelector('a#xing').href = window.atob('aHR0cHM6Ly93d3cueGluZy5jb20vcHJvZmlsZS9Sb2JlcnRfU2Nod2VpemVyMTI=');
+    aside.querySelector('a#angellist').href = window.atob('aHR0cHM6Ly9hbmdlbC5jby9yc2Nod2VpemVy');
   }
 
   function resize() {
