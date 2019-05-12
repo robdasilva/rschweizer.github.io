@@ -10,26 +10,19 @@ $base-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvet
 
 /* COLORS */
 
-$white: #fafdff; // hsv(200, 2%, 100%)
-$lightgray: #86969e; // hsv(200, 15%, 62%)
-$gray: #4a5961; // hsv(200, 24%, 38%)
-$darkgray: #26353d; // hsv(200, 38%, 24%)
-$black: #0f1e26; // hsv(200, 62%, 15%)
+$white: #fafeff; // hsv(196, 2%, 100%)
+$lightgray: #889ca4; // hsv(196, 16%, 64%)
+$gray: #506068; // hsv(196, 24%, 40%)
+$darkgray: #24383c; // hsv(196, 40%, 24%)
+$black: #102428; // hsv(196, 64%, 16%)
 
-// h 352  # 360-(360*(0.618**8))
-// s  76  # 100-(100*(0.618**3))
-// v  91  # 100-(100*(0.618**5))
-$brand-color: #e83850;
+$brand-color: #cc2850; // hsv(345, 80%, 80%)
+$dark-brand-color: #a42040; // hsv(345, 80%, 64%)
 
-// h 352  # 360-(360*(0.618**8))
-// s  85  # 100-(100*(0.618**4))
-// v  62  # 100-(100*(0.618**2))
-$dark-brand-color: #9e182a;
+$link-color: #28a4cc; // hsv(196, 80%, 80%)
+$dark-link-color: #2080a4; // hsv(196, 80%, 64%)
 
-$link-color: #1d8bc2; // hsv(200, 85%, 76%)
-$dark-link-color: #18719e; // hsv(200, 85%, 62%)
-
-$highlight-color: #e8e858; // hsv(60, 62%, 91%)
+$highlight-color: #fff45c; // hsv(56, 64%, 100%)
 
 $linkedin-color: #0077b5;
 $github-color: #24292e;
