@@ -1,0 +1,123 @@
+/* GENERAL */
+
+a.social {
+  color: $gray;
+
+  &:hover {
+    &.email {
+      color: $brand-color;
+    }
+
+    &.github {
+      color: $github-color;
+    }
+
+    &.linkedin {
+      color: $linkedin-color;
+    }
+  }
+}
+
+svg.icon {
+  display: block;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+}
+
+/* LAYOUT */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: $black;
+  background-color: $white;
+  font-family: 'Default', $base-font-family;
+  font-size: 75%;
+  line-height: 1.6;
+
+  @media all and (min-width: 32em) {
+    font-size: 87.5%;
+  }
+
+  @media all and (min-width: 40em) {
+    font-size: 100%;
+  }
+
+  @media all and (min-width: 56em) {
+    font-size: 112.5%;
+  }
+
+  @media all and (min-width: 72em) {
+    font-size: 125%;
+  }
+
+  &.hero {
+    background-image: url('/assets/images/rs.min.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 62.5% 16% 16% 16%;
+    width: 100%;
+
+    &:after {
+      background: linear-gradient(rgba($white, 0), rgba($white, 0) 62.5%, rgba($white, 1) 100%);
+      content: '';
+      height: 0;
+      left: 0;
+      padding-top: 62.5%;
+      position: absolute;
+      top: 0%;
+      width: 100%;
+    }
+
+    @media all and (min-width: 56em) {
+      background-position: 28.65% 46.35%;
+      background-size: auto 133%;
+      margin: 0;
+      padding: 3.6em 7.3344%;
+      width: 38.2%;
+
+      &:after {
+        content: none;
+      }
+    }
+
+    @media all and (min-aspect-ratio: 8/5) {
+      background-size: 133% auto;
+    }
+  }
+}
+
+footer {
+  padding-top: 2.5em;
+  display: flex;
+
+  a {
+    display: block;
+    font-size: 4em;
+    height: 1em;
+    margin-right: 0.5em;
+    width: 1em;
+
+    @media all and (min-width: 32em) {
+      font-size: 3.5em;
+    }
+
+    @media all and (min-width: 40em) {
+      font-size: 3em;
+    }
+
+    @media all and (min-width: 56em) {
+      font-size: 2.5em;
+    }
+
+    @media all and (min-width: 72em) {
+      font-size: 2em;
+    }
+  }
+}

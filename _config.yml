@@ -1,0 +1,15 @@
+title: Robert Schweizer
+author: Robert Schweizer
+email: mail@robertschweizer.me
+description: Full-stack JavaScript developer with a background in Media Design
+
+linkedin: rschweizer
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+timezone: UTC
