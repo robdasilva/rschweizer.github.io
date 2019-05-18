@@ -3,8 +3,12 @@
   {%- include head.html -%}
 
   <body>
+    {% comment %} {%- include header.html -%} {% endcomment %}
+
     <main>
       {{ content }}
     </main>
+
+    {% comment %} {%- include footer.html -%} {% endcomment %}
   </body>
 </html>

@@ -1,0 +1,10 @@
+<header>
+  <a class="home" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+  <nav>
+    {%- assign pages = site.pages | where: 'navigation', 'main' | sort: 'order' -%}
+    {%- for page in pages -%}
+      <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+    {%- endfor -%}
+  </nav>
+</header>
+
