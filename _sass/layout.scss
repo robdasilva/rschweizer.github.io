@@ -1,23 +1,5 @@
 /* GENERAL */
 
-a.social {
-  color: $gray;
-
-  &:hover {
-    &.email {
-      color: $brand-color;
-    }
-
-    &.github {
-      color: $github-color;
-    }
-
-    &.linkedin {
-      color: $linkedin-color;
-    }
-  }
-}
-
 svg.icon {
   display: block;
   fill: currentColor;
@@ -93,11 +75,12 @@ body {
   }
 }
 
-footer {
+aside.social {
   padding-top: 2.5em;
   display: flex;
 
   a {
+    color: $gray;
     display: block;
     font-size: 4em;
     height: 1em;
@@ -118,6 +101,20 @@ footer {
 
     @media all and (min-width: 72em) {
       font-size: 2em;
+    }
+
+    &:hover {
+      &.email {
+        color: $brand-color;
+      }
+
+      &.github {
+        color: $github-color;
+      }
+
+      &.linkedin {
+        color: $linkedin-color;
+      }
     }
   }
 }
