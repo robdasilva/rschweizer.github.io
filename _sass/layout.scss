@@ -273,15 +273,22 @@ section.home {
 }
 
 aside.social {
-  padding-top: 2.5em;
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  max-width: 20em;
+  padding-top: 2em;
+  width: 100%;
+
+  @media screen and (min-width: 72em) {
+    max-width: 12em;
+  }
 
   a {
     color: $gray;
     display: block;
     font-size: 3.25em;
     height: 1em;
-    margin-right: 0.5em;
     width: 1em;
 
     @media all and (min-width: 32em) {
@@ -336,7 +343,7 @@ aside.social {
 
     &:hover {
       &.email {
-        color: $brand-color;
+        color: $link-color;
       }
 
       &.github {
@@ -345,6 +352,10 @@ aside.social {
 
       &.linkedin {
         color: $linkedin-color;
+      }
+
+      &.medium {
+        color: $medium-color;
       }
 
       &.basecamp {
