@@ -4,7 +4,7 @@ layout: home
 title: ""
 ---
 
-# Hi, my name is Robert{: .red}.
+# Hi, my name is Robert.
 
 I’m a **Full-stack&nbsp;Developer** with a background in Media&nbsp;Design and a passion for innovative technology and challenging&nbsp;projects.
 
