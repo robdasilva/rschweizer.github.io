@@ -17,7 +17,7 @@ html {
 body {
   color: $black;
   background-color: $white;
-  font-family: 'Default', $base-font-family;
+  font-family: "Default", $base-font-family;
   font-size: 75%;
   height: 100%;
   line-height: 1.6;
@@ -35,7 +35,7 @@ body {
     font-size: 112.5%;
   }
 
-  @media all and (min-width: 72em) {
+  @media all and (min-width: 80em) {
     font-size: 125%;
   }
 }
@@ -50,13 +50,17 @@ section {
   height: 100%;
 
   &.home {
-    background-image: url('/assets/images/rs.jpg');
+    background-image: url("/assets/images/rs.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 
     &:after {
-      background: linear-gradient(rgba($white, 0), rgba($white, 0) 62.5%, rgba($white, 1) 100%);
-      content: '';
+      background: linear-gradient(
+        rgba($white, 0),
+        rgba($white, 0) 62.5%,
+        rgba($white, 1) 100%
+      );
+      content: "";
       height: 0;
       left: 0;
       padding-top: 62.5%;
