@@ -1,0 +1,72 @@
+---
+title: career
+position: 2
+icon: route
+career:
+  - title: Learning to code
+    text: |-
+      I taught myself to code when I was 15, so I could make super cool websites 
+      for both my band at the time and my parents' business – [kappelmeier.de](http://kappelmeier.de).
+
+      Soon after, I registered a business and started making designs and 
+      building websites for other local businesses as well.
+    image: band-480.jpg
+    caption: The music makers
+  - title: Studying media design and informatics
+    text: |-
+      After earning enough money with my business in the first year after 
+      school, I started studying media design. 
+
+      [My final project was an app](http://nackt-in-ravensburg.de/projekte/sunspots) 
+      to find out where the sun is currently shining nearby and get suggestions 
+      for fun activities there. That project actually led me to study media informatics and 
+      infromation&nbsp;science right after as well.
+
+      Over the course of my studies, I was offered a job as a tutor at my 
+      university, which was an amazing learning experience for me. I also still
+      had my business and kept designing and building websites for businesses 
+      and startups in my network.
+    image: md-480.jpg
+    caption: Showcasing my app
+  - title: Starting out as a software engineer
+    text: |-
+      Halfway into my CS degree, I felt the strong urge to be part of something 
+      bigger and started looking for a job in software development.
+
+      I became a working student at a startup, [8select](http://8select.com), 
+      and learned so much, thanks to my CTO and mentor – kudos @Andy! 
+
+      Soon after I started into a full-time position there, kept building, 
+      learning and later even teaching other developers myself.
+    image: 8s-480.jpg
+    caption: Mocking my CTO ;-)
+  - title: What's next?
+    text: |-
+      After almost three, wonderful years with 8select, my girlfriend and I 
+      moved to another city and I set out to find new challenges.
+
+      I am currently working at another startup, [Capmo](http://capmo.de),
+      building an app to manage construction sites more efficiently. 
+
+      **Could Basecamp be where I am finding home?**
+    image: bc-480.jpg
+    caption: Hiking to Basecamp ;D
+---
+
+<div class="career-list">
+  {% for step in page.career %}
+  <div class="career-item">
+    <div class="career-image">
+      {%- assign src = step.image | prepend:"/assets/images/basecamp/" -%} {%-
+      capture caption -%}
+      <h4>{{ step.caption }}</h4>
+      {%- endcapture -%} {% include polaroid.html src=src alt=step.caption
+      caption=caption %}
+    </div>
+    <div class="career-details">
+      <h3>{{ step.title }}</h3>
+      <p>{{ step.text | markdownify }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>

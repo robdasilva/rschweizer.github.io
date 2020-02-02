@@ -1,0 +1,85 @@
+#career {
+  .container {
+    display: block;
+
+    .career-text {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .career-list {
+      margin-top: 5em;
+
+      .career-item {
+        padding-bottom: 3em;
+
+        &:nth-child(2n) {
+          .career-image {
+            -webkit-transform: rotate(2.5deg);
+            transform: rotate(deg);
+          }
+        }
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+
+        .career-image {
+          -webkit-transform: rotate(-2.5deg);
+          margin: 0 auto;
+          transform: rotate(-2.5deg);
+          width: 75%;
+        }
+
+        .career-details {
+          padding-top: 1em;
+
+          .address {
+            font-weight: 700;
+          }
+
+          .price {
+            font-style: italic;
+          }
+        }
+      }
+
+      @media (min-width: 30em) {
+        .career-item {
+          -webkit-box-align: center;
+          -webkit-box-orientation: vertical;
+          align-items: center;
+          display: -webkit-box;
+          display: flex;
+          padding-top: 3em;
+
+          &:nth-child(2n) {
+            -webkit-box-direction: reverse;
+            flex-direction: row-reverse;
+
+            .career-details {
+              padding-right: 2em;
+            }
+          }
+
+          &:first-child {
+            padding-top: 0em;
+          }
+
+          .career-image {
+            -webkit-box-flex: 1;
+            flex: 1 2 38.2%;
+          }
+
+          .career-details {
+            -webkit-box-flex: 2;
+            box-sizing: border-box;
+            flex: 2 1 61.8%;
+            padding-left: 2em;
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

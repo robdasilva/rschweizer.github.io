@@ -1,0 +1,37 @@
+#contact {
+  padding-bottom: 10em;
+
+  .container {
+    display: block;
+
+    .contact-text {
+      margin: 0 auto;
+      text-align: center;
+
+      @media (min-width: 30em) {
+        width: 67%;
+      }
+
+      @media (min-width: 45em) {
+        width: 50%;
+      }
+
+      h4 {
+        -webkit-transform: rotate(-2deg);
+        padding-left: 1em;
+        text-indent: -1em;
+        transform: rotate(-2deg);
+
+        @media (min-width: 30em) {
+          padding-left: 3em;
+          text-indent: -3em;
+        }
+
+        @media (min-width: 30em) {
+          padding-left: 5em;
+          text-indent: -5em;
+        }
+      }
+    }
+  }
+}

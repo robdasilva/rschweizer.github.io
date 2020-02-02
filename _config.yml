@@ -5,9 +5,11 @@ description: Full-stack developer with a background in Media Design
 
 linkedin: rschweizer
 
+collections:
+  - sections
+
 plugins:
   - jekyll-seo-tag
-  - jekyll-sitemap
 
 sass:
   style: compressed
