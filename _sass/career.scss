@@ -8,10 +8,12 @@
     }
 
     .career-list {
-      margin-top: 5em;
-
       .career-item {
-        padding-bottom: 3em;
+        padding: 3em 0;
+
+        &:first-child {
+          padding-top: 0em;
+        }
 
         &:nth-child(2n) {
           .career-image {
@@ -29,6 +31,10 @@
           margin: 0 auto;
           transform: rotate(-2.5deg);
           width: 75%;
+
+          @media (min-width: 25em) {
+            width: 60%;
+          }
         }
 
         .career-details {
@@ -42,16 +48,14 @@
             font-style: italic;
           }
         }
-      }
 
-      @media (min-width: 30em) {
-        .career-item {
+        @media (min-width: 35em) {
           -webkit-box-align: center;
           -webkit-box-orientation: vertical;
           align-items: center;
           display: -webkit-box;
           display: flex;
-          padding-top: 3em;
+          padding: 1.5em 0;
 
           &:nth-child(2n) {
             -webkit-box-direction: reverse;
@@ -60,10 +64,6 @@
             .career-details {
               padding-right: 2em;
             }
-          }
-
-          &:first-child {
-            padding-top: 0em;
           }
 
           .career-image {

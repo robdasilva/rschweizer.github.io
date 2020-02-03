@@ -1,8 +1,10 @@
 #intro {
-  min-height: 100vh;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-bottom: 5.5em;
 
   .container {
-    min-height: 100vh;
+    height: 100%;
 
     .bg {
       -webkit-transform: translateY(-25%) skewY(-7.5deg);
