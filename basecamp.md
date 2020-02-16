@@ -1,4 +1,0 @@
----
-layout: sections
-permalink: /basecamp
----
