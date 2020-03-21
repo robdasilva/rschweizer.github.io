@@ -148,20 +148,20 @@ body {
   color: $black;
   background-color: $white;
   font-family: "Default", $font-family;
-  font-size: 75%;
+  font-size: 100%;
   line-height: 1.6;
   position: relative;
 
   @media all and (min-width: 45em) {
-    font-size: 87.5%;
+    font-size: 106.25%;
   }
 
   @media all and (min-width: 60em) {
-    font-size: 100%;
+    font-size: 112.5%;
   }
 
   @media all and (min-width: 75em) {
-    font-size: 112.5%;
+    font-size: 118.75%;
   }
 
   @media all and (min-width: 90em) {
@@ -242,8 +242,8 @@ section.home {
   }
 
   @media all and (min-width: 56em) {
-    background-position: 28.65% 46.35%;
-    background-size: auto 133%;
+    background-position: 22.5% 45%;
+    background-size: auto 120%;
 
     &:after {
       content: none;
@@ -251,7 +251,7 @@ section.home {
   }
 
   @media all and (min-aspect-ratio: 8/5) {
-    background-size: 133% auto;
+    background-size: 120% auto;
   }
 
   article {
@@ -260,7 +260,13 @@ section.home {
     width: 100%;
 
     @media all and (min-width: 56em) {
-      padding: 3.6em 7.3344%;
+      background: linear-gradient(
+        -45deg,
+        rgba($white, 0),
+        rgba($white, 0) 62.5%,
+        rgba($white, 1) 100%
+      );
+      padding: 5% 0 0 8%;
       width: 38.2%;
     }
   }
