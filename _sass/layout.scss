@@ -276,35 +276,33 @@ aside.social {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  margin: 0 auto;
   max-width: 20em;
   padding-top: 2em;
   width: 100%;
 
-  @media screen and (min-width: 72em) {
+  @media screen and (min-width: 40em) {
+    max-width: 16em;
+  }
+
+  @media screen and (min-width: 56em) {
+    margin: 0;
     max-width: 12em;
   }
 
   a {
     color: $gray;
     display: block;
-    font-size: 3.25em;
+    font-size: 2em;
     height: 1em;
     width: 1em;
 
-    @media all and (min-width: 32em) {
-      font-size: 3.5em;
+    @media screen and (min-width: 40em) {
+      font-size: 1.75em;
     }
 
-    @media all and (min-width: 40em) {
-      font-size: 3em;
-    }
-
-    @media all and (min-width: 56em) {
-      font-size: 2.5em;
-    }
-
-    @media all and (min-width: 72em) {
-      font-size: 2em;
+    @media screen and (min-width: 56em) {
+      font-size: 1.5em;
     }
 
     &.basecamp {
@@ -356,6 +354,16 @@ aside.social {
 
       &.medium {
         color: $medium-color;
+      }
+
+      &.stackoverflow {
+        #stackoverflow-stack {
+          fill: $stackoverflow-primary-color;
+        }
+
+        #stackoverflow-tray {
+          fill: $stackoverflow-secondary-color;
+        }
       }
 
       &.basecamp {

@@ -16,6 +16,12 @@
       {% include icons/linkedin.svg %}
     </a>
   {%- endif -%}
+
+  {%- if site.stackoverflow -%}
+    <a class="stackoverflow" href="https://stackoverflow.com/users/{{ site.stackoverflow.id }}/{{ site.stackoverflow.username }}" title="View on Stack Overflow">
+      {% include icons/stackoverflow.svg %}
+    </a>
+  {%- endif -%}
   
   {%- if site.medium -%}
     <a class="medium" href="https://medium.com/@{{ site.medium }}" title="View on Medium">
